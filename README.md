@@ -18,3 +18,4 @@ Attached below is a screenshot of the quiz application. This is what the player 
 
 Click the link below to view the deployed application: 
 
+https://briggoh.github.io/JavaScript-Quiz/
