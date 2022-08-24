@@ -15,5 +15,6 @@ Attached below is a screenshot of the quiz application. This is what the player 
 
 ![Screen Shot 2022-08-24 at 2 13 23 PM](https://user-images.githubusercontent.com/109489824/186524894-c5b2f340-5056-4686-ad7d-59f3d1a3b24b.png)
 
+
 Click the link below to view the deployed application: 
 
