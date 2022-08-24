@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Quiz!</title>
+  <!-- These are the Bootstrap Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <!-- This is the CSS link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- These are the Google Font links -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Background Image -->
+  <img src="./assets/images/tie-dye-bg.webp" class="img" alt="A pastel tie-dye background." />
+  <!-- Home Page Container  -->
+  <!-- homePage (JS) -->
+  <div class="container">
+    <div class="homePage-container card text-center" id="homePage-container">
+      <div class="card-header">
+        [ Java Script Quiz! ]
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">SO YOU THINK YOU KNOW JAVA SCRIPT?</h5>
+        <p class="card-text"> Test your coding knowledge and click on the answer that you think is correct! 
+          <br>
+          For each incorrect answer, 10 seconds will be removed from the countdown. Your final score will be your remaining time after all questions have been answered!
+        </p>
+      </div>
+      <div class="card-footer text-muted">
+        <!-- Start button  -->
+        <button class="hover" id="start-button">START</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Question Container  -->
+  <!-- quizStart (JS)-->
+  <div class="hide card text-center" id="questions-container">
+    <div class="timer" id="timer">Countdown!</div>
+    <!-- Question -->
+    <h3 id="question">Question</h3>
+    <!-- Answer div  -->
+    <div id="answer-buttons" class="choices-div">
+      <!-- Answer buttons  -->
+      <button class="btn option" data-number="1" id="option-1">A</button>
+      <button class="btn option" data-number="2" id="option-2">B</button>
+      <button class="btn option" data-number="3" id="option-3">C</button>
+      <button class="btn option" data-number="4" id="option-4">D</button>
+    </div>
+      <div class="hide" id="answer"></div>
+  </div>
+
+  <!-- timesUp - Container -->
+ <div class="hide timesUp-container card text-center" id="timesUp">
+      <div class="card-header">
+        [ OH NO! IT LOOKS LIKE YOU RAN OUT OF TIME! ]
+      </div>
+      <div class="card-body">
+        <p class="card-text text-muted">["Need", "a", "coffee", "break", "?"]</p>
+      </div>
+      <div class="card-footer">
+        <button id="replay-button" onClick="window.location.reload();">Replay Quiz!</button>      
+      </div>
+    </div>
+  
+<!-- Input your initials -->
+<!-- highScoreContainer (JS)-->
+  <div class="hide" id="your-score">
+    <div class="card-header yourScoreIs">
+      Your Score is : <br>
+      <p id="scoreNumGoesHere"></p>
+    </div>
+    <label for="initials" class="int-text">[ Enter your initials ] <br>
+      <p class="int-text-line2">See where you rank.</p>
+    </label><br>
+    <!-- Input bar -->
+    <input type="text" id="initials-input"><br>
+    <!-- Submit initials button  -->
+    <button class="button" id="submit-initials-button">Add to Score Board</button>
+  </div>
+
+  <!-- Leaderboard Container  -->
+  <!-- scoreBoardCont (js)-->
+  <div class="hide" id="scoreBoard">
+    <div class="highscores-container card text-center" id="highscores-container">
+      <div class="card-header">
+        [ High Scores ] 
+        <br>
+        <h3>[ Top 10 ]</h3>
+      </div>
+      <div class="card-body">
+        <p id="boardTitles">Coder     -     Score</p>
+       <ul id="highScoresList">
+        <!-- New scores added in here as <li> -->
+       </ul>
+      </div>
+      <div class="card-footer text-muted">
+        <button id="replay-button" onClick="window.location.reload();">Replay Quiz!</button>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
