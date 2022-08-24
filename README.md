@@ -1,6 +1,6 @@
 # Timed JavaScript Quiz - Utilizing API Fundamentals
 
-For this project, I developed a web application which functions as a timed quiz on JavaScript fundamentals. Upon entering the page, the user is met with detailed instructions on how the game is performed. When the "Start" button located beneath the instructions is clicked, the user is launched into the timed application.
+For this project, I developed a web application which functions as a timed quiz on JavaScript fundamentals. Upon entering the page, the user is met with detailed instructions on how the game is performed. When the "start" button located beneath the instructions is clicked, the user is launched into the timed application.
 
 Once the "start" button is clicked, the timer begins with 60 seconds and the player is presented with a question. If the question is answered correctly, a chime sound byte will play and the player will proceed to the next question. If the question is answered incorrectly, a bassoon sound byte will play and the player will have ten points deducted from their time before proceeding to the next question. 
 
