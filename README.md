@@ -1,4 +1,4 @@
-# JavaScript-Quiz
+# Timed JavaScript Quiz - Utilizing API Fundamentals
 
 For this project, I developed a web application which functions as a timed quiz on JavaScript fundamentals. Upon entering the page, the user is met with detailed instructions on how the game is performed. When the "Start" button located beneath the instructions is clicked, Then the user is launched into the timed application.
 
